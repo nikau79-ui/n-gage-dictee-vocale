@@ -38,9 +38,13 @@
 ## À faire — Priorité haute
 
 ### Build multi-plateforme
-- [ ] Build Windows (.msi)
+- [ ] Build Windows (.msi) ⭐ *Majorité des pros SST/SPSTI sont sur Windows*
 - [ ] Build Linux (.deb, .AppImage)
 - [ ] GitHub Actions pour builds automatiques
+
+### Expérience premier lancement
+- [ ] Dictionnaire SST pré-activé au premier lancement
+- [ ] Onboarding simplifié pour utilisateurs non-tech
 
 ### Icône personnalisée
 - [x] Créer icône N-Gage (remplacer icône Handy originale)
@@ -51,6 +55,7 @@
 - [ ] Guide de prise en main rapide
 - [ ] Tutoriel vidéo court
 - [ ] FAQ
+- [ ] Page web de téléchargement (n-gage.fr/telechargement)
 
 ---
 
@@ -65,10 +70,17 @@
 - [ ] Indicateur du dictionnaire actif pendant transcription
 - [ ] Statistiques (mots corrigés par session)
 
-### Templates (Phase 2)
-- [ ] Templates de phrases types (intro rapport, conclusion...)
+### Templates SST (Phase 2)
+- [ ] Templates de phrases types pour rapports SST :
+  - "Suite à la visite du [date], il a été constaté..."
+  - "Il est recommandé de mettre en place..."
+  - "Risque évalué : [gravité] x [fréquence] = [niveau]"
 - [ ] Interface de gestion des templates
 - [ ] Insertion rapide par raccourci
+
+### Export structuré
+- [ ] Structurer une dictée en sections (Contexte / Observations / Recommandations)
+- [ ] Mode "rapport de visite" avec champs guidés
 
 ---
 
@@ -82,7 +94,9 @@
 ### Intégrations
 - [ ] Intégration n8n pour automatisation
 - [ ] Export PDF avec mise en forme
-- [ ] Mode "rapport structuré"
+
+### Maintenance
+- [ ] Mise à jour automatique (Tauri updater) — notif quand nouvelle version dispo
 
 ---
 

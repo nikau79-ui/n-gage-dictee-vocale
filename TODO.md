@@ -43,8 +43,8 @@
 - [ ] GitHub Actions pour builds automatiques
 
 ### Icône personnalisée
-- [ ] Créer icône N-Gage (remplacer icône Handy originale)
-- [ ] Toutes les tailles (16x16 → 1024x1024)
+- [x] Créer icône N-Gage (remplacer icône Handy originale)
+- [x] Toutes les tailles (16x16 → 1024x1024)
 - [ ] Icône barre système (tray)
 
 ### Documentation
@@ -86,6 +86,17 @@
 
 ---
 
+## Réflexions futures
+
+### White-label / Personnalisation par client
+- [ ] Rebranding facile (nom + icône + couleurs) via fichier de config
+- [ ] Script de génération de builds personnalisés par service/entreprise
+- [ ] Version "générique SST" nationale vs versions personnalisées
+
+**Note** : La plupart des utilisateurs préfèrent une version nationale standard. La personnalisation par client serait un service premium sur demande.
+
+---
+
 ## Fichiers clés du projet
 
 | Fichier | Description |
@@ -106,3 +117,5 @@
 - Rebranding complet N-Gage
 - Système de dictionnaires par packs
 - Build macOS fonctionnel
+- Icône N-Gage personnalisée (toutes tailles)
+- Dépôt GitHub : github.com/nikau79-ui/n-gage-dictee-vocale

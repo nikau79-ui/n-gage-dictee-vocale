@@ -1,5 +1,5 @@
 {
-  "_comment": "French translation for Handy. Contribute at: https://github.com/cjpais/Handy",
+  "_comment": "French translation for N-Gage. Contribute at: https://github.com/cjpais/N-Gage",
   "tray": {
     "settings": "Paramètres...",
     "checkUpdates": "Rechercher des mises à jour...",
@@ -60,7 +60,7 @@
     },
     "permissions": {
       "title": "Autorisations requises",
-      "description": "Handy a besoin de quelques autorisations pour fonctionner correctement.",
+      "description": "N-Gage a besoin de quelques autorisations pour fonctionner correctement.",
       "microphone": {
         "title": "Accès au microphone",
         "description": "Nécessaire pour entendre votre voix pour la transcription."
@@ -76,7 +76,7 @@
     }
   },
   "modelSelector": {
-    "welcome": "Bienvenue sur Handy !",
+    "welcome": "Bienvenue sur N-Gage !",
     "downloadPrompt": "Téléchargez un modèle ci-dessous pour commencer la transcription.",
     "availableModels": "Modèles Disponibles",
     "downloadModels": "Télécharger des Modèles",
@@ -102,7 +102,7 @@
     "general": {
       "title": "Général",
       "shortcut": {
-        "title": "Raccourcis Handy",
+        "title": "Raccourcis N-Gage",
         "description": "Configurer les raccourcis clavier pour déclencher l'enregistrement de la reconnaissance vocale",
         "loading": "Chargement des raccourcis...",
         "none": "Aucun raccourci configuré",
@@ -179,7 +179,7 @@
       },
       "autostart": {
         "label": "Lancer au démarrage",
-        "description": "Démarrer automatiquement Handy lorsque vous vous connectez à votre ordinateur."
+        "description": "Démarrer automatiquement N-Gage lorsque vous vous connectez à votre ordinateur."
       },
       "overlay": {
         "title": "Position de la fenêtre d'enregistrement",
@@ -229,11 +229,19 @@
         }
       },
       "customWords": {
-        "title": "Mots personnalisés",
-        "description": "Ajoutez des mots souvent mal entendus ou mal orthographiés lors de la transcription. Le système corrigera automatiquement les mots similaires pour correspondre à votre liste.",
+        "title": "Vocabulaire personnalisé",
+        "description": "Importez des dictionnaires de vocabulaire métier pour améliorer la reconnaissance des termes techniques.",
         "placeholder": "Ajouter un mot",
         "add": "Ajouter",
-        "remove": "Supprimer {{word}}"
+        "remove": "Supprimer {{word}}",
+        "importDictionary": "Importer un dictionnaire",
+        "importSuccess": "Dictionnaire \"{{name}}\" importé ({{count}} mots)",
+        "importEmpty": "Aucun mot valide dans le fichier",
+        "importError": "Erreur lors de l'import",
+        "words": "mots",
+        "clearAll": "Tout effacer",
+        "removeDictionary": "Supprimer le dictionnaire",
+        "individualWords": "Mots individuels"
       }
     },
     "postProcessing": {
@@ -317,7 +325,7 @@
       },
       "updateChecks": {
         "label": "Vérifier les mises à jour",
-        "description": "Vérifier automatiquement les nouvelles versions de Handy"
+        "description": "Vérifier automatiquement les nouvelles versions de N-Gage"
       },
       "soundTheme": {
         "label": "Thème sonore",
@@ -372,11 +380,11 @@
       "title": "À propos",
       "version": {
         "title": "Version",
-        "description": "Version actuelle de Handy"
+        "description": "Version actuelle de N-Gage"
       },
       "appDataDirectory": {
         "title": "Emplacement des données de l'application",
-        "description": "Emplacement où Handy stocke ses données"
+        "description": "Emplacement où N-Gage stocke ses données"
       },
       "sourceCode": {
         "title": "Code source",
@@ -385,7 +393,7 @@
       },
       "supportDevelopment": {
         "title": "Soutenir le développement",
-        "description": "Aidez-nous à continuer à construire Handy",
+        "description": "Aidez-nous à continuer à construire N-Gage",
         "button": "Faire un don"
       },
       "acknowledgments": {
@@ -393,7 +401,7 @@
         "whisper": {
           "title": "Whisper.cpp",
           "description": "Inférence haute performance du modèle de reconnaissance vocale automatique Whisper d'OpenAI",
-          "details": "Handy utilise Whisper.cpp pour un traitement rapide et local de la parole en texte. Merci au travail incroyable de Georgi Gerganov et des contributeurs."
+          "details": "N-Gage utilise Whisper.cpp pour un traitement rapide et local de la parole en texte. Merci au travail incroyable de Georgi Gerganov et des contributeurs."
         }
       }
     }
@@ -436,7 +444,7 @@
   },
   "accessibility": {
     "permissionsRequired": "Autorisations d'accessibilité requises",
-    "permissionsDescription": "Handy a besoin des autorisations d'accessibilité pour taper le texte transcrit.",
+    "permissionsDescription": "N-Gage a besoin des autorisations d'accessibilité pour taper le texte transcrit.",
     "openSettings": "Ouvrir les Préférences Système",
     "dismiss": "Ignorer"
   },
@@ -445,7 +453,7 @@
   },
   "appLanguage": {
     "title": "Langue de l'application",
-    "description": "Changer la langue de l'interface de Handy"
+    "description": "Changer la langue de l'interface de N-Gage"
   },
   "overlay": {
     "transcribing": "Transcription..."

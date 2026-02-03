@@ -1,0 +1,182 @@
+{
+  "_description": "Dictionnaire de vocabulaire SST (Santé et Sécurité au Travail) pour Handy Prevention",
+  "_version": "1.0.0",
+  "_date": "2025-02-03",
+
+  "acronymes_institutions": [
+    "CARSAT",
+    "CRAMIF",
+    "CGSS",
+    "DIRECCTE",
+    "DREETS",
+    "DDETS",
+    "INRS",
+    "ANACT",
+    "ARACT",
+    "OPPBTP",
+    "MSA",
+    "CPAM",
+    "URSSAF",
+    "CNAM",
+    "CNAV"
+  ],
+
+  "acronymes_documents": [
+    "DUERP",
+    "PAPRIPACT",
+    "PPSPS",
+    "PGC",
+    "PGCSPS",
+    "DIUO",
+    "DOE",
+    "FDS",
+    "VLEP"
+  ],
+
+  "acronymes_risques": [
+    "RPS",
+    "TMS",
+    "CMR",
+    "ACD",
+    "EPI",
+    "EPC",
+    "ATEX"
+  ],
+
+  "acronymes_instances": [
+    "CSE",
+    "CSSCT",
+    "CHSCT",
+    "CODIR",
+    "IRP"
+  ],
+
+  "acronymes_metiers": [
+    "IPRP",
+    "HSE",
+    "QSE",
+    "QHSE",
+    "SST",
+    "SSTI",
+    "SPST"
+  ],
+
+  "acronymes_accidents": [
+    "AT",
+    "MP",
+    "IPP",
+    "ITT",
+    "AAH"
+  ],
+
+  "termes_risques_physiques": [
+    "lombalgie",
+    "cervicalgie",
+    "dorsalgie",
+    "tendinite",
+    "épicondylite",
+    "syndrome canal carpien",
+    "hernie discale",
+    "sciatique",
+    "cruralgie",
+    "arthrose",
+    "bursite"
+  ],
+
+  "termes_risques_psychosociaux": [
+    "burnout",
+    "bore-out",
+    "brown-out",
+    "harcèlement",
+    "stress chronique",
+    "charge mentale",
+    "surcharge cognitive",
+    "isolement professionnel",
+    "conflits interpersonnels",
+    "manque reconnaissance"
+  ],
+
+  "termes_ergonomie": [
+    "ergonomie",
+    "posture",
+    "manutention",
+    "gestes répétitifs",
+    "port de charges",
+    "station debout prolongée",
+    "station assise prolongée",
+    "écran",
+    "siège ergonomique",
+    "repose-pieds",
+    "hauteur plan travail"
+  ],
+
+  "termes_prevention": [
+    "prévention primaire",
+    "prévention secondaire",
+    "prévention tertiaire",
+    "évaluation risques",
+    "plan actions",
+    "mesures correctives",
+    "mesures préventives",
+    "formation sécurité",
+    "sensibilisation",
+    "audit",
+    "inspection",
+    "visite terrain"
+  ],
+
+  "termes_organisation": [
+    "organisation travail",
+    "temps travail",
+    "horaires atypiques",
+    "travail nuit",
+    "astreintes",
+    "télétravail",
+    "coactivité",
+    "sous-traitance",
+    "intérimaires"
+  ],
+
+  "termes_environnement": [
+    "bruit",
+    "éclairage",
+    "température",
+    "ventilation",
+    "qualité air",
+    "vibrations",
+    "rayonnements",
+    "substances chimiques",
+    "poussières",
+    "fumées"
+  ],
+
+  "verbes_action": [
+    "évaluer",
+    "identifier",
+    "analyser",
+    "prioriser",
+    "planifier",
+    "mettre en œuvre",
+    "suivre",
+    "contrôler",
+    "améliorer",
+    "former",
+    "sensibiliser",
+    "informer",
+    "accompagner"
+  ],
+
+  "formulations_rapport": [
+    "Il est recommandé",
+    "Il convient de",
+    "Il est nécessaire de",
+    "À court terme",
+    "À moyen terme",
+    "À long terme",
+    "En priorité",
+    "De manière urgente",
+    "Suite à notre analyse",
+    "Nous préconisons",
+    "Nous recommandons"
+  ]
+}

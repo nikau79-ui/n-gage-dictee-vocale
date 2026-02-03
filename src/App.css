@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-text: #0f0f0f;
-  --color-background: #fbfbfb;
-  --color-background-ui: #da5893;
-  --color-logo-primary: #faa2ca;
-  --color-logo-stroke: #382731;
-  --color-text-stroke: #f6f6f6;
-  --color-mid-gray: #808080;
+  /* N-Gage Colors */
+  --color-text: #264B63;              /* Bleu Ardoise - texte principal */
+  --color-background: #FFFFFF;         /* Blanc - fond */
+  --color-background-ui: #264B63;      /* Bleu Ardoise - UI principale */
+  --color-accent: #F28705;             /* Orange Doux - accent */
+  --color-logo-primary: #F28705;       /* Orange Doux - logo */
+  --color-logo-stroke: #264B63;        /* Bleu Ardoise - contour logo */
+  --color-text-stroke: #FFFFFF;
+  --color-mid-gray: #5a7a8a;           /* Bleu gris intermédiaire */
 }
 
 :root {
@@ -46,11 +48,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Colors - Dark Theme */
-    --color-text: #fbfbfb;
-    --color-background: #2c2b29;
-    --color-logo-primary: #f28cbb;
-    --color-logo-stroke: #fad1ed;
+    /* N-Gage Dark Theme */
+    --color-text: #FFFFFF;
+    --color-background: #1a3242;        /* Bleu Ardoise foncé */
+    --color-logo-primary: #F28705;      /* Orange Doux */
+    --color-logo-stroke: #FFFFFF;
   }
 }
 

@@ -1,0 +1,115 @@
+# Vocabulaire Search and Rescue / Cospas-Sarsat
+# Fichier de test pour l'import de vocabulaire N-Gage
+
+# === SYSTÈME COSPAS-SARSAT ===
+Cospas-Sarsat
+COSPAS
+SARSAT
+MEOSAR
+LEOSAR
+GEOSAR
+MEOLUT
+LEOLUT
+GEOLUT
+
+# === TYPES DE BALISES ===
+EPIRB
+PLB
+ELT
+SSAS
+AIS-SART
+SART
+MOB
+
+# === CENTRES DE COORDINATION ===
+RCC
+JRCC
+MRCC
+ARCC
+MCC
+FMCC
+USMCC
+LUT
+
+# === ORGANISATIONS ===
+ICAO
+IMO
+ITU
+IAMSAR
+IMSO
+Inmarsat
+
+# === TERMES OPÉRATIONNELS SAR ===
+SAR
+GMDSS
+NAVTEX
+DSC
+Mayday
+Pan-Pan
+Sécurité
+SOLAS
+IAMSAR
+
+# === ÉQUIPEMENTS ===
+VHF
+UHF
+AIS
+GNSS
+GPS
+Galileo
+GLONASS
+BeiDou
+transpondeur
+répondeur
+
+# === TERMES TECHNIQUES ===
+détresse
+localisation
+géolocalisation
+radiolocalisation
+triangulation
+Doppler
+hexadécimal
+UIN
+MMSI
+MID
+beacon
+homing
+
+# === AÉRONEFS SAR ===
+hélicoptère
+hélitreuillage
+treuillage
+aéronef
+parachutage
+
+# === NAUTIQUE ===
+radeau
+canot
+gilet
+brassière
+survie
+naufragé
+dériveur
+chavirage
+
+# === PROCÉDURES ===
+MEDICO
+MEDEVAC
+évacuation
+récupération
+sauvetage
+intervention
+coordination
+alerte
+activation
+désactivation
+
+# === MÉTÉO ===
+météorologie
+visibilité
+houle
+courant
+dérive
+vent
+brouillard

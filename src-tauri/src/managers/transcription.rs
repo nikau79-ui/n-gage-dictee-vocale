@@ -429,11 +429,19 @@ impl TranscriptionManager {
             }
         };
 
+        // Collect all words from custom_words and enabled dictionaries
+        let mut all_custom_words: Vec<String> = settings.custom_words.clone();
+        for dictionary in &settings.custom_dictionaries {
+            if dictionary.enabled {
+                all_custom_words.extend(dictionary.words.clone());
+            }
+        }
+
         // Apply word correction if custom words are configured
-        let corrected_result = if !settings.custom_words.is_empty() {
+        let corrected_result = if !all_custom_words.is_empty() {
             apply_custom_words(
                 &result.text,
-                &settings.custom_words,
+                &all_custom_words,
                 settings.word_correction_threshold,
             )
         } else {

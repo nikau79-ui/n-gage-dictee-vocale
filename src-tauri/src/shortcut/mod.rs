@@ -625,6 +625,51 @@ pub fn update_custom_words(app: AppHandle, words: Vec<String>) -> Result<(), Str
 
 #[tauri::command]
 #[specta::specta]
+pub fn add_dictionary(
+    app: AppHandle,
+    id: String,
+    name: String,
+    words: Vec<String>,
+) -> Result<(), String> {
+    let mut settings = settings::get_settings(&app);
+    // Check if dictionary with same id already exists
+    if settings.custom_dictionaries.iter().any(|d| d.id == id) {
+        return Err("Dictionary with this ID already exists".to_string());
+    }
+    settings.custom_dictionaries.push(settings::CustomDictionary {
+        id,
+        name,
+        words,
+        enabled: true,
+    });
+    settings::write_settings(&app, settings);
+    Ok(())
+}
+
+#[tauri::command]
+#[specta::specta]
+pub fn remove_dictionary(app: AppHandle, id: String) -> Result<(), String> {
+    let mut settings = settings::get_settings(&app);
+    settings.custom_dictionaries.retain(|d| d.id != id);
+    settings::write_settings(&app, settings);
+    Ok(())
+}
+
+#[tauri::command]
+#[specta::specta]
+pub fn toggle_dictionary(app: AppHandle, id: String, enabled: bool) -> Result<(), String> {
+    let mut settings = settings::get_settings(&app);
+    if let Some(dict) = settings.custom_dictionaries.iter_mut().find(|d| d.id == id) {
+        dict.enabled = enabled;
+        settings::write_settings(&app, settings);
+        Ok(())
+    } else {
+        Err("Dictionary not found".to_string())
+    }
+}
+
+#[tauri::command]
+#[specta::specta]
 pub fn change_word_correction_threshold_setting(
     app: AppHandle,
     threshold: f64,

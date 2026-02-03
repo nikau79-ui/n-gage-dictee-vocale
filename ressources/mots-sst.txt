@@ -1,0 +1,90 @@
+# Dictionnaire SST - Mots pour import dans Handy Prevention
+# Un mot ou expression par ligne
+# Ces mots seront reconnus et corrigés automatiquement lors de la transcription
+
+# === INSTITUTIONS ===
+CARSAT
+CRAMIF
+CGSS
+DIRECCTE
+DREETS
+DDETS
+INRS
+ANACT
+ARACT
+OPPBTP
+MSA
+CPAM
+URSSAF
+CNAM
+CNAV
+
+# === DOCUMENTS RÉGLEMENTAIRES ===
+DUERP
+PAPRIPACT
+PPSPS
+PGC
+PGCSPS
+DIUO
+DOE
+FDS
+VLEP
+
+# === RISQUES ===
+RPS
+TMS
+CMR
+ACD
+EPI
+EPC
+ATEX
+
+# === INSTANCES ===
+CSE
+CSSCT
+CHSCT
+CODIR
+IRP
+
+# === MÉTIERS ===
+IPRP
+HSE
+QSE
+QHSE
+SST
+SSTI
+SPST
+préventeur
+ergonome
+
+# === ACCIDENTS ===
+AT
+MP
+IPP
+ITT
+AAH
+
+# === PATHOLOGIES ===
+lombalgie
+cervicalgie
+dorsalgie
+tendinite
+épicondylite
+bursite
+sciatique
+cruralgie
+arthrose
+
+# === RISQUES PSYCHOSOCIAUX ===
+burnout
+harcèlement
+
+# === ERGONOMIE ===
+ergonomie
+manutention
+posture
+
+# === PRÉVENTION ===
+prévention
+évaluation
+sensibilisation

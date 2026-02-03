@@ -1,13 +1,14 @@
 name: Build & Release
 
 on:
-  # Déclenché manuellement depuis GitHub
   workflow_dispatch:
-
-  # Déclenché sur push d'un tag (ex: v1.0.1)
   push:
     tags:
       - 'v*'
+
+# Permissions nécessaires pour créer des releases
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -15,22 +16,18 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # macOS Apple Silicon (M1/M2/M3)
           - platform: macos-latest
             target: aarch64-apple-darwin
             name: macOS-ARM64
 
-          # macOS Intel
           - platform: macos-latest
             target: x86_64-apple-darwin
             name: macOS-Intel
 
-          # Windows
           - platform: windows-latest
             target: x86_64-pc-windows-msvc
             name: Windows
 
-          # Linux
           - platform: ubuntu-22.04
             target: x86_64-unknown-linux-gnu
             name: Linux
@@ -51,12 +48,14 @@ jobs:
         with:
           targets: ${{ matrix.target }}
 
+      # Linux : dépendances système + Vulkan
       - name: Install Linux dependencies
         if: matrix.platform == 'ubuntu-22.04'
         run: |
           sudo apt-get update
           sudo apt-get install -y \
             build-essential \
+            cmake \
             libasound2-dev \
             pkg-config \
             libssl-dev \
@@ -64,7 +63,15 @@ jobs:
             libwebkit2gtk-4.1-dev \
             libayatana-appindicator3-dev \
             librsvg2-dev \
-            patchelf
+            patchelf \
+            libvulkan-dev \
+            vulkan-tools \
+            glslang-tools
+
+      # Windows : installer cmake
+      - name: Install Windows dependencies
+        if: matrix.platform == 'windows-latest'
+        run: choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
 
       - name: Install dependencies
         run: bun install
@@ -89,7 +96,7 @@ jobs:
 
             ### Installation
             1. Télécharger le fichier correspondant à votre système
-            2. Installer l application
+            2. Installer l'application
             3. Au premier lancement, télécharger un modèle Whisper
             4. Autoriser les permissions (micro + accessibilité)
           releaseDraft: true

@@ -39,8 +39,10 @@
 
 ### Build multi-plateforme
 - [ ] Build Windows (.msi) ⭐ *Majorité des pros SST/SPSTI sont sur Windows*
-- [ ] Build Linux (.deb, .AppImage)
-- [ ] GitHub Actions pour builds automatiques
+  - GitHub Actions configuré mais échoue (problème Vulkan/whisper-rs-sys)
+  - Piste : compiler whisper-rs sans accélération GPU ou trouver la bonne config CMake
+- [ ] Build Linux (.deb, .AppImage) — désactivé temporairement (manque glslc)
+- [x] GitHub Actions pour builds automatiques (macOS fonctionne ✓)
 
 ### Expérience premier lancement
 - [ ] Dictionnaire SST pré-activé au premier lancement

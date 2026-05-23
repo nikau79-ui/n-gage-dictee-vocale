@@ -38,11 +38,12 @@
 ## À faire — Priorité haute
 
 ### Build multi-plateforme
-- [ ] Build Windows (.msi) ⭐ *Majorité des pros SST/SPSTI sont sur Windows*
-  - GitHub Actions configuré mais échoue (problème Vulkan/whisper-rs-sys)
-  - Piste : compiler whisper-rs sans accélération GPU ou trouver la bonne config CMake
+- [x] Build Windows (.msi) avec Vulkan SDK 1.3.296.0 — 23/05/2026 (cf docs/superpowers/specs/2026-05-23-build-windows-vulkan-design.md)
+  - Run de référence : https://github.com/nikau79-ui/n-gage-dictee-vocale/actions/runs/26330580791
+  - .msi non signé (SmartScreen warning au premier lancement, normal)
+- [ ] **Investiguer comportement runtime Windows** (23/05/2026) : .msi s'installe bien mais Nicolas a noté "ce n'était pas détecté, ça ne fonctionnait pas" au premier test. À creuser au prochain run : autorisations micro Windows ? raccourci global Ctrl+Shift+Space pas capté ? modèle Whisper pas téléchargé ? Activer debug mode (Ctrl+Shift+D) pour voir les logs.
 - [ ] Build Linux (.deb, .AppImage) — désactivé temporairement (manque glslc)
-- [x] GitHub Actions pour builds automatiques (macOS fonctionne ✓)
+- [x] GitHub Actions pour builds automatiques (macOS + Windows ✓)
 
 ### Expérience premier lancement
 - [ ] Dictionnaire SST pré-activé au premier lancement

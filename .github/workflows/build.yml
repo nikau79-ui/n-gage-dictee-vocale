@@ -71,12 +71,19 @@ jobs:
           Write-Host "Downloading Vulkan SDK $version from $url"
           Invoke-WebRequest -Uri $url -OutFile "$env:TEMP\vulkan-sdk.exe"
           Write-Host "Running silent installer..."
-          Start-Process -FilePath "$env:TEMP\vulkan-sdk.exe" -ArgumentList "--accept-licenses","--default-answer","--confirm-command","install" -Wait
+          $installer = Start-Process -FilePath "$env:TEMP\vulkan-sdk.exe" -ArgumentList "--accept-licenses","--default-answer","--confirm-command","install" -Wait -PassThru
+          if ($installer.ExitCode -ne 0) {
+            Write-Error "Vulkan SDK installer exited with code $($installer.ExitCode)"
+            exit 1
+          }
           Write-Host "Exporting environment variables for next steps"
           echo "VULKAN_SDK=C:\VulkanSDK\$version" >> $env:GITHUB_ENV
           echo "C:\VulkanSDK\$version\Bin" >> $env:GITHUB_PATH
           Write-Host "Verifying installation..."
-          Test-Path "C:\VulkanSDK\$version\Bin\glslc.exe"
+          if (-not (Test-Path "C:\VulkanSDK\$version\Bin\glslc.exe")) {
+            Write-Error "Vulkan SDK installation failed: glslc.exe not found at C:\VulkanSDK\$version\Bin\"
+            exit 1
+          }
 
       - name: Install dependencies
         run: bun install
